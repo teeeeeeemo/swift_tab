@@ -17,6 +17,8 @@
 		E79415BC1E5D4E79004303A6 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79415BB1E5D4E79004303A6 /* ImageViewController.swift */; };
 		E79415BE1E5D50E3004303A6 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79415BD1E5D50E3004303A6 /* DateViewController.swift */; };
 		E79415C01E5D555B004303A6 /* File.png in Resources */ = {isa = PBXBuildFile; fileRef = E79415BF1E5D555B004303A6 /* File.png */; };
+		E79415C21E5D58F3004303A6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79415C11E5D58F3004303A6 /* MapViewController.swift */; };
+		E79415C41E5D5A49004303A6 /* rsz_1.png in Resources */ = {isa = PBXBuildFile; fileRef = E79415C31E5D5A49004303A6 /* rsz_1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		E79415BB1E5D4E79004303A6 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		E79415BD1E5D50E3004303A6 /* DateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 		E79415BF1E5D555B004303A6 /* File.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = File.png; sourceTree = "<group>"; };
+		E79415C11E5D58F3004303A6 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		E79415C31E5D5A49004303A6 /* rsz_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rsz_1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 		E79415A41E5D493F004303A6 /* Tab */ = {
 			isa = PBXGroup;
 			children = (
+				E79415C31E5D5A49004303A6 /* rsz_1.png */,
+				E79415C11E5D58F3004303A6 /* MapViewController.swift */,
 				E79415BF1E5D555B004303A6 /* File.png */,
 				E79415BD1E5D50E3004303A6 /* DateViewController.swift */,
 				E79415BB1E5D4E79004303A6 /* ImageViewController.swift */,
@@ -143,6 +149,7 @@
 				E79415B01E5D493F004303A6 /* LaunchScreen.storyboard in Resources */,
 				E79415BA1E5D4E44004303A6 /* kkk.jpg in Resources */,
 				E79415C01E5D555B004303A6 /* File.png in Resources */,
+				E79415C41E5D5A49004303A6 /* rsz_1.png in Resources */,
 				E79415AD1E5D493F004303A6 /* Assets.xcassets in Resources */,
 				E79415AB1E5D493F004303A6 /* Main.storyboard in Resources */,
 			);
@@ -158,6 +165,7 @@
 				E79415BE1E5D50E3004303A6 /* DateViewController.swift in Sources */,
 				E79415A81E5D493F004303A6 /* ViewController.swift in Sources */,
 				E79415BC1E5D4E79004303A6 /* ImageViewController.swift in Sources */,
+				E79415C21E5D58F3004303A6 /* MapViewController.swift in Sources */,
 				E79415A61E5D493F004303A6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

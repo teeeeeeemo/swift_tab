@@ -67,13 +67,14 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="aJN-0W-DaE"/>
                         <segue destination="oe6-R4-kay" kind="relationship" relationship="viewControllers" id="Jlk-yL-zEK"/>
                         <segue destination="nRu-xJ-cho" kind="relationship" relationship="viewControllers" id="MrA-ej-OfQ"/>
+                        <segue destination="Kum-0Q-plr" kind="relationship" relationship="viewControllers" id="quc-fJ-xU6"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C9f-yW-TOW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-78.75" y="138.38028169014083"/>
         </scene>
-        <!--Image View Controller-->
+        <!--꺄아-->
         <scene sceneID="ffG-Qu-st5">
             <objects>
                 <viewController id="oe6-R4-kay" customClass="ImageViewController" customModule="Tab" customModuleProvider="target" sceneMemberID="viewController">
@@ -129,7 +130,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="f9v-P1-5tD"/>
+                    <tabBarItem key="tabBarItem" title="꺄아" image="rsz_1.png" id="f9v-P1-5tD"/>
                     <connections>
                         <outlet property="btnResize" destination="uW0-bn-9rW" id="BjJ-y1-KSA"/>
                         <outlet property="imgGallery" destination="n71-fZ-E9O" id="25H-Yu-eYg"/>
@@ -189,8 +190,66 @@
             </objects>
             <point key="canvasLocation" x="758" y="512"/>
         </scene>
+        <!--map-->
+        <scene sceneID="XZ4-D7-LlQ">
+            <objects>
+                <viewController id="Kum-0Q-plr" customClass="MapViewController" customModule="Tab" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fvW-Kq-wpi"/>
+                        <viewControllerLayoutGuide type="bottom" id="RBP-Y6-Q3Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Slg-yw-ng4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="n2B-yj-thk">
+                                <rect key="frame" x="31" y="28" width="260" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="현재위치"/>
+                                    <segment title="베를린동물원"/>
+                                    <segment title="트라팔가 광장"/>
+                                    <segment title="에펠탑"/>
+                                </segments>
+                                <connections>
+                                    <action selector="sgChangeLocation:" destination="Kum-0Q-plr" eventType="valueChanged" id="v8v-oT-GR8"/>
+                                </connections>
+                            </segmentedControl>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="s1Z-KB-dtN">
+                                <rect key="frame" x="16" y="64" width="288" height="444"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zm7-fW-AOD">
+                                <rect key="frame" x="16" y="516" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mq-xP-IXK">
+                                <rect key="frame" x="16" y="539" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="map" image="rsz_1.png" id="3SZ-yv-U07"/>
+                    <connections>
+                        <outlet property="lblLocationInfo1" destination="Zm7-fW-AOD" id="BrH-HX-RfW"/>
+                        <outlet property="lblLocationInfo2" destination="4mq-xP-IXK" id="cw5-cm-y2T"/>
+                        <outlet property="myMap" destination="s1Z-KB-dtN" id="Dxm-op-QMo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EKx-4K-0OK" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1476" y="877"/>
+        </scene>
     </scenes>
     <resources>
         <image name="File.png" width="1280" height="1124"/>
+        <image name="rsz_1.png" width="32" height="32"/>
     </resources>
 </document>
